@@ -1,0 +1,63 @@
+.debug [class*="col-"] {
+  border: 1px solid black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+.section-padding-50 {
+  padding: 50px 0;
+}
+
+/* HEADER TOP BAR FIXED */
+#header-top-bar {
+  background-color: white;
+  height: 80px;
+  line-height: 80px;
+}
+
+.nav-desktop li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.nav-desktop li:last-child {
+  margin-right: 0;
+}
+
+/* HEADER */
+#header {
+  margin-top: 80px;
+  background-image: url(../img/header-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header .card {
+  height: 500px;
+  margin: 20px 40px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+
+#header h1 {
+  color: white;
+}
+
+#header h2 {
+  color: lightgrey;
+}

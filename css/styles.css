@@ -9,6 +9,7 @@
 }
 
 body {
+  font-family: 'Open Sans', sans-serif;
   color: black;
   scroll-behavior: smooth;
 }
@@ -22,9 +23,22 @@ ul {
   padding: 50px 0;
 }
 
+.row-padding-30 {
+  padding: 30px 0;
+}
+
+.bg-white {
+  background-color: white;
+}
+.bg-grey {
+  background-color: #f3f5f9;
+}
+.bg-blue {
+  background-color: blue;
+}
+
 /* HEADER TOP BAR FIXED */
 #header-top-bar {
-  background-color: white;
   height: 80px;
   line-height: 80px;
 }
@@ -47,8 +61,7 @@ ul {
 }
 
 #header .card {
-  height: 500px;
-  margin: 20px 40px;
+  height: 400px;
   background-color: white;
   border: 1px solid lightgrey;
   border-radius: 10px;
@@ -61,3 +74,10 @@ ul {
 #header h2 {
   color: lightgrey;
 }
+
+/* CUSTOMERS LIST */
+#customers-list {
+  height: 30vh;
+}
+
+/* SERVICES */

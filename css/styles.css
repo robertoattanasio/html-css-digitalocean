@@ -39,7 +39,7 @@ a:link, a:hover, a:visited, a:active {
   background-color: #f3f5f9;
 }
 .bg-blue {
-  background-color: #246ef5;
+  background-image: linear-gradient(#246ef5, blue);
 }
 
 h1.section-black {
@@ -204,12 +204,61 @@ p.terms a:active, p.terms a:link, p.terms a:visited {
   color: #246ef5;
   text-decoration: underline;
 }
+
 /* CUSTOMERS LIST */
-#customers-list {
-  height: 30vh;
+#customers-list img {
+  height: 100%;
 }
 
 /* SERVICES */
+#services li {
+  font-size: 18px;
+  color: grey;
+  border-left: 1px solid grey;
+  padding: 7px 10px;
+}
+
+#services li:hover {
+  color: black;
+  border-left: 1px solid #246ef5;
+}
+
+ul.services-menu {
+  margin-bottom: 40px;
+}
+
+.services-box-logo {
+  display: block;
+}
+
+h3.services-box-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+}
+
+p.services-box-content {
+  font-size: 12px;
+  font-weight: 200;
+  color: black;
+}
+
+p.services-box-link {
+  font-size: 12px;
+  font-weight: 700;
+  color: #246ef5;
+}
+
+p.services-box-link::after {
+  content: " >";
+}
+
+@media screen and (max-width:1199px) {
+  .services-box {
+    margin-bottom: 40px;
+  }
+}
+
 
 /* GET STARTED DIVIDER */
 button.get-started-button {

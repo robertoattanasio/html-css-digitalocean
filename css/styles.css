@@ -42,6 +42,24 @@ a:link, a:hover, a:visited, a:active {
   background-color: #246ef5;
 }
 
+h1.section-black {
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h1.section-white {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2.section {
+  color: grey;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 /* HEADER TOP BAR FIXED */
 #header-top-bar {
   height: 70px;
@@ -68,13 +86,13 @@ img.header-logo {
   vertical-align: middle;
 }
 
-button.header-button {
+button.header-topbar-button {
   background-color: white;
   color: #246ef5;
   border: 1px solid #246ef5;
 }
 
-button.header-button:hover {
+button.header-topbar-button:hover {
   background-color: #246ef5;
   color: white;
   border: 1px solid #246ef5;
@@ -109,27 +127,103 @@ button.header-button:hover {
   background-size: cover;
 }
 
+h1.header-title {
+  color: white;
+  font-size: 60px;
+}
+
+h2.header-paragraph {
+  font-size: 18px;
+  color: lightgrey;
+  line-height: 26px;
+}
+
 #header .card {
-  height: 400px;
+  padding: 20px;
   background-color: white;
   border: 1px solid lightgrey;
   border-radius: 10px;
 }
 
-#header h1 {
+h1.card-heading {
+  color: black;
+  font-size: 26px;
+}
+
+h2.card-heading {
+  color: #246ef5;
+  font-size: 26px;
+  margin: 0;
+}
+
+div.card form {
+  margin-top: 10px;
+}
+
+button.header-button-create {
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: #246ef5;
   color: white;
+  border: 1px solid #246ef5;
 }
 
-#header h2 {
-  color: lightgrey;
+button.header-button-create:hover {
+  background-color: white;
+  color: #246ef5;
+  border: 1px solid #246ef5;
+  transition: 0.2s;
 }
 
+button.header-button-login {
+  background-image: url("../img/google-icon.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: white;
+  color: #246ef5;
+  border: 1px solid #246ef5;
+}
+
+button.header-button-login:hover {
+  background-image: url();
+  background-color: #246ef5;
+  color: white;
+  border: 1px solid #246ef5;
+  transition: 0.2s;
+}
+
+p.terms {
+  margin-top: 20px;
+  font-size: 10px;
+}
+
+p.terms a:active, p.terms a:link, p.terms a:visited {
+  color: #246ef5;
+  text-decoration: underline;
+}
 /* CUSTOMERS LIST */
 #customers-list {
   height: 30vh;
 }
 
 /* SERVICES */
+
+/* GET STARTED DIVIDER */
+button.get-started-button {
+  background-color: white;
+  color: #246ef5;
+  border: 1px solid #246ef5;
+}
+
+button.get-started-button:hover {
+  background-color: #f1f1f1;
+  color: black;
+  border: 1px solid #246ef5;
+  transition: 0.2s;
+}
 
 /* FOOTER */
 footer {

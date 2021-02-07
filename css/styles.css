@@ -210,17 +210,38 @@ p.terms a:active, p.terms a:link, p.terms a:visited {
   height: 100%;
 }
 
+/* SLIDER */
+img.slider {
+  width: 100%;
+}
+
+.slider-description {
+  color: black;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+ul.slider-selector li {
+  display: inline;
+}
+
+ul.slider-selector li:hover {
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 /* SERVICES */
 #services li {
   font-size: 18px;
   color: grey;
-  border-left: 1px solid grey;
+  border-left: 2px solid lightgrey;
   padding: 7px 10px;
 }
 
 #services li:hover {
   color: black;
-  border-left: 1px solid #246ef5;
+  border-left: 2px solid #246ef5;
 }
 
 ul.services-menu {
@@ -253,12 +274,39 @@ p.services-box-link::after {
   content: " >";
 }
 
-@media screen and (max-width:1199px) {
-  .services-box {
-    margin-bottom: 40px;
-  }
+/* SERVICS COUNTRY */
+.country-row {
+  line-height: 14px;
+  color: white;
+  border-bottom: 1px solid white;
+  margin-top: 8px;
 }
 
+.country-row-padding {
+  padding: 10px 30px;
+}
+
+.country-row-name {
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+}
+
+.country-row-city {
+  color: lightgrey;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+p.country-row-link {
+  font-size: 14px;
+  font-weight: normal;
+  color: lightblue;
+}
+
+p.country-row-link::after {
+  content: " >";
+}
 
 /* GET STARTED DIVIDER */
 button.get-started-button {
@@ -333,4 +381,10 @@ ul.footer-list a:hover li {
   color: white;
   margin: 0;
   transition: 0.2s;
+}
+
+@media screen and (max-width:1199px) {
+  .services-box {
+    margin-bottom: 40px;
+  }
 }

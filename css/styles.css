@@ -2,16 +2,11 @@
   border: 1px solid black;
 }
 
+/* INIT */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  color: black;
-  scroll-behavior: smooth;
 }
 
 ul {
@@ -24,6 +19,13 @@ a:link, a:hover, a:visited, a:active {
   text-decoration: none;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  scroll-behavior: smooth;
+}
+
+/* CLASSI MODULARI */
 .section-padding-50 {
   padding: 50px 0;
 }
@@ -44,6 +46,7 @@ a:link, a:hover, a:visited, a:active {
   background-image: linear-gradient(#246ef5, blue);
 }
 
+/* TIPOGRAFIA */
 h1.section-black {
   color: black;
   font-size: 30px;
@@ -56,38 +59,52 @@ h1.section-white {
   font-weight: 700;
 }
 
+h1.header-title {
+  color: white;
+  font-size: 60px;
+}
+
+h1.card-heading {
+  color: black;
+  font-size: 26px;
+}
+
 h2.section {
   color: grey;
   font-size: 18px;
   line-height: 24px;
 }
 
-/* HEADER TOP BAR FIXED */
-#header-top-bar {
-  height: 70px;
-  line-height: 70px;
+h2.header-paragraph {
+  font-size: 18px;
+  color: lightgrey;
+  line-height: 26px;
 }
 
-.nav-desktop li {
-  display: inline;
-  margin-right: 10px;
-}
-
-.nav-desktop li:last-child {
-  margin-right: 0;
-}
-
-.nav-desktop a:hover {
+h2.card-heading {
   color: #246ef5;
-  transition: 0.2s;
+  font-size: 26px;
+  margin: 0;
 }
 
-img.header-logo {
-  width: 180px;
-  padding-bottom: 5px;
-  vertical-align: middle;
+footer h5.copyright {
+  font-size: 14px;
+  color: lightgrey;
+  margin: 0;
 }
 
+footer h5.footer-list-title {
+  font-size: 14px;
+  color: white;
+}
+
+footer h6.copyright {
+  font-size: 12px;
+  color: lightgrey;
+  margin: 0;
+}
+
+/* BOTTONI */
 button.header-topbar-button {
   background-color: white;
   color: #246ef5;
@@ -99,79 +116,6 @@ button.header-topbar-button:hover {
   color: white;
   border: 1px solid #246ef5;
   transition: 0.2s;
-}
-
-.nav-desktop li:nth-child(even) a::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f078";
-}
-
-.nav-mobile {
-  font-size: 20px;
-  line-height: 70px;
-}
-
-.nav-mobile {
-  font-size: 16px;
-  line-height: 70px;
-}
-
-.nav-mobile a:hover {
-  color: #246ef5;
-  transition: 0.2s;
-}
-
-/* HELPER FIXED */
-
-.helper-fixed {
-  background-color: white;
-  border-radius: 50%;
-  box-shadow: 0px 2px 1px grey;
-  padding: 10px;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-}
-
-/* HEADER */
-#header {
-  margin-top: 70px;
-  background-image: url(../img/header-bg.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-h1.header-title {
-  color: white;
-  font-size: 60px;
-}
-
-h2.header-paragraph {
-  font-size: 18px;
-  color: lightgrey;
-  line-height: 26px;
-}
-
-#header .card {
-  padding: 20px;
-  background-color: white;
-  border: 1px solid lightgrey;
-  border-radius: 10px;
-}
-
-h1.card-heading {
-  color: black;
-  font-size: 26px;
-}
-
-h2.card-heading {
-  color: #246ef5;
-  font-size: 26px;
-  margin: 0;
-}
-
-div.card form {
-  margin-top: 10px;
 }
 
 button.header-button-create {
@@ -209,6 +153,105 @@ button.header-button-login:hover {
   transition: 0.2s;
 }
 
+button.get-started-button {
+  background-color: white;
+  color: #246ef5;
+  border: 1px solid #246ef5;
+}
+
+button.get-started-button:hover {
+  background-color: #f1f1f1;
+  color: black;
+  border: 1px solid #246ef5;
+  transition: 0.2s;
+}
+
+/* MAIN */
+/* HEADER TOP BAR FIXED */
+#header-top-bar {
+  height: 70px;
+  line-height: 70px;
+}
+
+.nav-desktop li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.nav-desktop li:last-child {
+  margin-right: 0;
+}
+
+.nav-desktop a:hover {
+  color: #246ef5;
+  transition: 0.2s;
+}
+
+img.header-logo {
+  width: 180px;
+  padding-bottom: 5px;
+  vertical-align: middle;
+}
+
+.nav-desktop li:nth-child(even) a::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: " \f078";
+}
+
+.nav-mobile {
+  font-size: 20px;
+  line-height: 70px;
+}
+
+.nav-mobile {
+  font-size: 16px;
+  line-height: 70px;
+}
+
+.nav-mobile a:hover {
+  color: #246ef5;
+  transition: 0.2s;
+}
+
+/* HELPER FIXED */
+.helper-fixed {
+  display: block;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 2px 1px grey;
+  padding: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* helper fixed disatttivato sotto i 768px per pulizia dei contenuti su smartphones */
+@media screen and (max-width:767px) {
+  .helper-fixed {
+    display: none;
+  }
+}
+
+/* HEADER */
+#header {
+  margin-top: 70px;
+  background-image: url(../img/header-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header .card {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+
+div.card form {
+  margin-top: 10px;
+}
+
 p.terms {
   margin-top: 20px;
   font-size: 10px;
@@ -225,6 +268,15 @@ p.terms a:active, p.terms a:link, p.terms a:visited {
 }
 
 /* SLIDER */
+.arrow-padding {
+  padding-top: 12%;
+}
+
+.arrow-padding i:hover {
+  color: #246ef5;
+  cursor: pointer;
+}
+
 img.slider {
   width: 100%;
 }
@@ -256,6 +308,13 @@ ul.slider-selector li:hover {
 #services li:hover {
   color: black;
   border-left: 2px solid #246ef5;
+}
+
+/* Piccola funzione per correggere il distanziamento delle services box da tablet in giù */
+@media screen and (max-width:1199px) {
+  .services-box {
+    margin-bottom: 40px;
+  }
 }
 
 ul.services-menu {
@@ -322,20 +381,6 @@ p.country-row-link::after {
   content: " >";
 }
 
-/* GET STARTED DIVIDER */
-button.get-started-button {
-  background-color: white;
-  color: #246ef5;
-  border: 1px solid #246ef5;
-}
-
-button.get-started-button:hover {
-  background-color: #f1f1f1;
-  color: black;
-  border: 1px solid #246ef5;
-  transition: 0.2s;
-}
-
 /* FOOTER */
 footer {
   background-color: #030f26;
@@ -345,18 +390,6 @@ footer {
 
 img.footer-logo {
   margin-top: 10px;
-}
-
-footer h5.copyright {
-  font-size: 14px;
-  color: lightgrey;
-  margin: 0;
-}
-
-footer h6.copyright {
-  font-size: 12px;
-  color: lightgrey;
-  margin: 0;
 }
 
 footer div.footer-social {
@@ -379,11 +412,6 @@ footer [class^="col-"]:first-child *:nth-child(even) {
   margin: 10px 0;
 }
 
-footer h5.footer-list-title {
-  font-size: 14px;
-  color: white;
-}
-
 footer ul.footer-list li {
   font-size: 14px;
   color: lightgrey;
@@ -395,10 +423,4 @@ ul.footer-list a:hover li {
   color: white;
   margin: 0;
   transition: 0.2s;
-}
-
-@media screen and (max-width:1199px) {
-  .services-box {
-    margin-bottom: 40px;
-  }
 }
